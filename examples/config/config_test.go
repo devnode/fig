@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/kkyr/fig"
+	"github.com/devnode/fig"
 )
 
 type Config struct {
@@ -24,7 +24,7 @@ type Config struct {
 	} `fig:"logger"`
 	Certificate struct {
 		Version    int       `fig:"version"`
-		DNSNames   []string  `fig:"dns_names" default:"[kkyr,kkyr.io]"`
+		DNSNames   []string  `fig:"dns_names" default:"[devnode,devnode.io]"`
 		Expiration time.Time `fig:"expiration" validate:"required"`
 	} `fig:"certificate"`
 }
@@ -56,6 +56,6 @@ func ExampleLoad() {
 	// debug
 	// [a-z]+
 	// 1
-	// [kkyr kkyr.io]
+	// [devnode devnode.io]
 	// 2020-12-01
 }

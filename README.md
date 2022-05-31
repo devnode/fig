@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
-    <a href="https://pkg.go.dev/github.com/kkyr/fig?tab=doc"><img src="https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white" alt="godoc" title="godoc"/></a>
-    <a href="https://github.com/kkyr/fig/releases"><img src="https://img.shields.io/github/v/tag/kkyr/fig" alt="semver tag" title="semver tag"/></a>
-    <a href="https://goreportcard.com/report/github.com/kkyr/fig"><img src="https://goreportcard.com/badge/github.com/kkyr/fig" alt="go report card" title="go report card"/></a>
+    <a href="https://pkg.go.dev/github.com/devnode/fig?tab=doc"><img src="https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white" alt="godoc" title="godoc"/></a>
+    <a href="https://github.com/devnode/fig/releases"><img src="https://img.shields.io/github/v/tag/kkyr/fig" alt="semver tag" title="semver tag"/></a>
+    <a href="https://goreportcard.com/report/github.com/devnode/fig"><img src="https://goreportcard.com/badge/github.com/devnode/fig" alt="go report card" title="go report card"/></a>
     <a href="https://coveralls.io/github/kkyr/fig?branch=master"><img src="https://coveralls.io/repos/github/kkyr/fig/badge.svg?branch=master" alt="coverage status" title="coverage status"/></a>
-    <a href="https://github.com/kkyr/fig/blob/master/LICENSE"><img src="https://img.shields.io/github/license/kkyr/fig" alt="license" title="license"/></a>
+    <a href="https://github.com/devnode/fig/blob/master/LICENSE"><img src="https://img.shields.io/github/license/kkyr/fig" alt="license" title="license"/></a>
 </p>
 
 # fig
@@ -25,7 +25,7 @@ fig is a tiny library for loading an application's config file and its environme
 
 ## Getting Started
 
-`$ go get -d github.com/kkyr/fig`
+`$ go get -d github.com/devnode/fig`
 
 Define your config file:
 
@@ -52,7 +52,7 @@ package main
 import (
   "fmt"
 
-  "github.com/kkyr/fig"
+  "github.com/devnode/fig"
 )
 
 type Config struct {
@@ -105,7 +105,7 @@ See usage [examples](/examples).
 
 ## Documentation
 
-See [go.dev](https://pkg.go.dev/github.com/kkyr/fig?tab=doc) for detailed documentation.
+See [go.dev](https://pkg.go.dev/github.com/devnode/fig?tab=doc) for detailed documentation.
 
 ## Contributing
 
