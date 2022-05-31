@@ -222,7 +222,7 @@ func (f *fig) processField(field *field) error {
 	}
 
 	if field.setDefault && isZero(field.v) {
-		if err := f.setDefaultValue(field.v, field.defaultVal); err != nil {
+		if err := f.setValue(field.v, field.defaultVal); err != nil {
 			return fmt.Errorf("unable to set default: %w", err)
 		}
 	}
@@ -245,15 +245,6 @@ func (f *fig) formatEnvKey(key string) string {
 		key = fmt.Sprintf("%s_%s", f.envPrefix, key)
 	}
 	return strings.ToUpper(key)
-}
-
-// setDefaultValue calls setValue but disallows booleans from
-// being set.
-func (f *fig) setDefaultValue(fv reflect.Value, val string) error {
-	if fv.Kind() == reflect.Bool {
-		return fmt.Errorf("unsupported type: %v", fv.Kind())
-	}
-	return f.setValue(fv, val)
 }
 
 // setValue sets fv to val. it attempts to convert val to the correct
